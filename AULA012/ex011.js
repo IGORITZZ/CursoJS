@@ -7,4 +7,5 @@ if (idade < 16) {
     } else {
         console.log(`Voto obrigatório`);
 }
-    
+ 
+
