@@ -12,20 +12,28 @@
     </header>
     <section>
         <h2>Verificando idade</h2>
-        <div id="data">
-            Ano de Nascimento:
-            <input type="date" name="dtnasc" id="dtnasc">
+        <div>
+            <p>Ano de Nascimento: 
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo:
+                <label for="mas">
+                    <input type="radio" name="radsex" id="mas" checked>
+                    Masculino
+                </label>
+                <label for="fem">
+                    <input type="radio" name="radsex" id="fem">
+                    Feminino
+                </label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="sex">
-            Sexo:
-            <label for="sexof">
-                <input type="radio" name="sexof" id="sexof"> Feminino
-            </label>
-            <label for="sexom">
-                <input type="radio" name="sexof" id="sexom"> Masculino
-            </label>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
         </div>
-        <input type="button" value="Verificar" onclick="varificar()">
     </section>
     <footer>
         &#169;<strong>Igor Theodoro</strong>
