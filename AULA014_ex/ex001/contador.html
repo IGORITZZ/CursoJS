@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,17 @@
         <h1>Super Contador</h1>
     </header>
     <section>
-        <div>
-            <p>Inicio: <input type="number" name="" id=""></p>
-            <p>Fim: <input type="number" name="" id=""></p>
-            <p>Passo: <input type="number" name="" id=""></p>
-            <input type="button" value="Contar">
+        <div id="inserir">
+            <p>Inicio: <input type="number" name="number" id="inumber"></p>
+            <p>Fim: <input type="number" name="number2" id="fnumber"></p>
+            <p>Passo: <input type="number" name="number3" id="pnumber"></p>
+            <input type="button" value="Contar" onclick="contador()">
         </div>
         <div id="res"></div>
     </section>
     <footer>&#169;<strong>Igor Theodoro</strong></footer>
+
+    <script src="contador.js"></script>
+
 </body>
 </html>
