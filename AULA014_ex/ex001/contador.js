@@ -14,7 +14,8 @@ function contador(){
         alert('[PASSO] Valor incorreto, vai receber o valor 1')
     } else {
         res.innerHTML = 'Contando: '
-
+        
+        //RESOLUÇÃO
         let i = Number(ini.value)
         let p = Number(passo.value)
         let f = Number(fim.value)
