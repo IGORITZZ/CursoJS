@@ -1,9 +1,9 @@
-let num = [5,3,9,8,3]
+let num = [5,3,9]
 
 
-num[5] = 9
-num.push(5)
+num[3] = 9
+num.push(4)
 console.log(num);
 console.log(num.length);
 console.log(num.sort());
-console.log(`Nosso vetor é ${num}`);
+console.log(`Nossos vetores são ${num}`);
