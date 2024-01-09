@@ -5,15 +5,19 @@ function tabuada(){
     if ( num.value.length == 0){
         alert('[ERRO] Digite um numero valido!')
         
-    } else {
-        let n = Number(num.value)
-        let c = 1
-        tab.innerHTML = ''
-        while ( c <= 10){
-            let item = document.createElement('option')
-            item.text = `${n} x ${c} = ${n*c}`
-            tab.appendChild(item)
-            c++
+    } else if ( num.value == 0 ) {
+        alert('[ERRO] O numero precisa ser maior do que 1.')
+        num.value = Number(1)
+        } else if ( num.value < 0) {
+            alert('[ERRO] Não podemos fazer tabuada de numeros negativos!')
+            num.value = Number(1)
+        } else {
+            let n = Number(num.value)
+            tab.innerHTML = ''
+            for ( let c = 1 ; c <= 10; c++){
+                let item = document.createElement('option')
+                item.text = `${n} x ${c} = ${n*c}`
+                tab.appendChild(item)                
         }
     }
 }
