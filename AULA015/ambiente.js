@@ -1,9 +1,6 @@
 let num = [5,3,9]
-
-
-num[3] = 9
-num.push(4)
-console.log(num);
-console.log(num.length);
-console.log(num.sort());
-console.log(`Nossos vetores são ${num}`);
+num.sort()
+num.push(2)
+console.log(`Meus vetores são ${num}`);
+console.log(`Meu vetor de posição 1 é ${num[0]}`);
+console.log(`A quantidade de vetores são ${num.length}`);
