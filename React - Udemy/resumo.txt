@@ -1,1 +1,14 @@
-npm create vite@latest
+Para criar projetos com maior agilidade use o comando com VITE:
+* npm create vite@latest *
+Para fazer o Terminal Integrado acesar a pasta do projeto:
+* cd .\nome-pasta\
+Quando criar com Vite, após isso precisamos instalar e usamos:
+* npm install * 
+Se houver algum erro podemos usar o comando:
+* npm install -g npm@latest  *
+E por fim, para inicializar o projeto usamos:
+* npm run dev *
+
+
+Outro modo de criar projetos é com NPX:
+* npx create-react-app nome-aplicação *
