@@ -35,21 +35,27 @@ function inLista(n, l){
 
 function finalizar(){
     if (valores.length == 0){
-        alert('erro')
+        alert('[ERRO] Adicione valores antes de continuar!')
     } else {
         let tot = valores.length
         let maior = valores[0]
-        let menor = [0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
         for (let pos in valores){
+            soma += valores[pos]
             if (valores[pos] > maior)
                 maior = valores[pos]
             if (valores[pos] < menor)
                 menor = valores[pos]
         }
+        media = soma / tot  
         res.innerHTML = ''
         res.innerHTML += `<p>O total de valores é: ${tot}</p>`
         res.innerHTML += `<p>O maior valor é: ${maior}</p>`
         res.innerHTML += `<p>O menor valor é: ${menor}</p>`
+        res.innerHTML += `<p>A soma dos valores é: ${soma}</p>`
+        res.innerHTML += `<p>A média dos valores é: ${media}</p>`
     }
 }
 
