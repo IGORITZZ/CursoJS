@@ -9,7 +9,7 @@ return (
     <div>
         <h1>Olá {name}, tudo bem?</h1>
         <p>Você é {data.Job}</p>
-        <p>{console.log(data)};</p>
+        <p>{console.log(data)}</p>
     </div>
 )
 
