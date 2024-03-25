@@ -12,11 +12,11 @@ function App() {
         <div>
           {/* Imagem em Public */}
           {/* essas imagens se sofrerem alterações no nome, vão precisar de alteração em todo o código*/}
-          <img src="/image.png" alt="Paisagem" width='50%'/>
+          <img src="/image.png" alt="Paisagem"/>
         </div>
         {/* Imagem em Assets */}
         {/* Dessa forma, como estou usando ela como se fosse uma váriavel, eu apenanas mudaria o nome do arquivo, e aonde a imagem fosse importada por meio de variável ele seria alterada de forma altomática. */}
-        <img src={Image} alt="Paisagem cidade" width='50%' />
+        <img src={Image} alt="Paisagem cidade"  />
       </div>
       <div>
         <ManageData/>
